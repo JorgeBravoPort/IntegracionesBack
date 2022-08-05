@@ -25,7 +25,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
 
-pool.query('select* from Empleados').then(function (result) {
+pool.query('select * from Empleados').then(function (result) {
   console.log(result);
 });
 
